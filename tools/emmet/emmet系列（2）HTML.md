@@ -603,3 +603,65 @@
 <keygen name="">
 ```
 
+> command
+
+```html
+<command>
+```
+
+> button:submit,button:s,btn:s
+
+```html
+<button type="submit"></button>
+```
+
+> button:reset,btton:r,btn:r
+
+```Html
+<button type="reset"></button>
+```
+
+> button:disabled,button:d,btn:d
+
+```html
+<button disabled></button>
+```
+
+> Fieldset:disabled,fieldset:d,fset:d
+
+```html
+<fieldset disabled></fieldset>
+```
+
+> bq
+
+```html
+<blockquote></blockquote>
+```
+
+> fig
+
+```html
+        <figure>
+            
+        </figure>
+```
+
+> figc
+
+```html
+<figcaption></figcaption>
+```
+
+> pic
+
+```html
+<picture></picture>
+```
+
+> ifr
+
+```html
+<iframe src="" frameborder="0"></iframe>
+```
+
