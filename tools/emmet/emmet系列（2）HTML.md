@@ -665,3 +665,57 @@
 <iframe src="" frameborder="0"></iframe>
 ```
 
+> emb
+>
+> <embed>标签定义嵌入的内容，比如插件（如flash文件）。html5新标签。具体参考地址：[查看详细](http://www.w3school.com.cn/html5/html5_embed.asp)
+
+```html
+<embed src="" type="">
+```
+
+> obj
+
+```html
+<object data="" type=""></object>
+```
+
+> cap
+>
+> caption 定义表格标题
+>
+> caption标签必须紧随table标签之后。只能对每一个表格定义一个标题。通常这个标题会被剧中与表格之上
+
+```html
+<caption></caption>
+```
+
+> colg
+>
+> colgroup标签用于对表格中的列进行组合，以便对其进行格式化。具体参考地址：[查看详细](http://www.w3school.com.cn/tags/tag_colgroup.asp)
+
+```html
+        <colgroup>
+            
+        </colgroup>
+```
+
+> fst,fset
+
+```html
+<fieldset></fieldset>
+```
+
+> btn
+
+```html
+<button></button>
+```
+
+> optg
+
+```html
+        <optgroup>
+            
+        </optgroup>
+```
+
