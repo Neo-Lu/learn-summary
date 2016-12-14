@@ -20,4 +20,4 @@
 
 ### mysql学习
 
-#### [mysql in子查询效率慢问题](expreience/mysql/mysql in子查询效率慢问题.md)
+#### [mysql in子查询效率慢问题](mysql/mysql in子查询效率慢问题.md)
