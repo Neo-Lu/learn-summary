@@ -1,23 +1,34 @@
 # learn-summary
 学习汇总
+只是自己知识沉淀的一个过程。可能会记录各种白痴问题，不过也算是自己成长的一种经历吧。
+
+### emmet系列 
+
+#### [emmet系列（1）基础语法](tools/emmet/emmet系列（1）基础语法.md)
+
+#### [emmet系列（2）HTML](tools/emmet/emmet系列（2）HTML.md)
+
+### node学习
+
+#### [Node开发——Sequelize-auto快速生成数据库实体工具](node/sequelize/Node开发——Sequelize-auto 快速生成数据库实体工具.md)
+
+### js学习
+#### [Object.assign()](expreience/js/Object.assign().md)
+
+### vue学习
+#### [【转】Vue.js——vue-resource全攻略](vue/【转】Vue.js——vue-resource全攻略.md)
+
+### mysql学习
+
+#### [mysql in子查询效率慢问题](mysql/mysql in子查询效率慢问题.md)
+
+### docker学习
+#### [docker学习笔记](expreience/docker/docker学习笔记.md)
 
 ## 经验总结
 
 ### [mac同一个应用之间切换](expreience/mac/mac同一个应用之间切换.md)
 ### [mac删除目录命令](expreience/mac/mac 删除目录命令.md)
 ### [vim编辑命令](expreience/mac/vim编辑命令.md)
-
+### [mac同一个应用之间切换](expreience/mac/mac同一个应用之间切换.md)
 ### [【转】SwaggerUI教程API文档神器 配合Node使用](expreience/mac/【转】SwaggerUI教程API文档神器 搭配Node使用.md)
-
-### emmet系列 
-
-#### [emmet系列（1）基础语法](tools/emmet/emmet系列（1）基础语法.md)
-#### [emmet系列（2）HTML](tools/emmet/emmet系列（2）HTML.md)
-
-### node学习
-
-#### [Node开发——Sequelize-auto 快速生成数据库实体工具](node/sequelize/Node开发——Sequelize-auto 快速生成数据库实体工具.md)
-
-### mysql学习
-
-#### [mysql in子查询效率慢问题](mysql/mysql in子查询效率慢问题.md)
