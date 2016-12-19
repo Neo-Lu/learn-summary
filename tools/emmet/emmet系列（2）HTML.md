@@ -719,3 +719,45 @@
         </optgroup>
 ```
 
+> tarea
+
+```
+<textarea name="" id="" cols="30" rows="10"></textarea>
+```
+
+> leg
+> legend 元素为 fieldset 元素定义标题（caption）,具体可参考：[这里](http://www.w3school.com.cn/tags/tag_legend.asp)
+```
+<legend></legend>
+```
+
+> sect
+
+```
+        <section>
+            
+        </section>
+```
+
+> art
+
+```
+<article></article>
+```
+
+> hdr
+
+```
+<header></header>
+```
+
+> ftr
+
+```
+<footer></footer>
+```
+
+> adr
+```
+<address></address>
+```
