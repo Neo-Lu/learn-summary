@@ -12,6 +12,8 @@
 
 #### [Node开发——Sequelize-auto快速生成数据库实体工具](node/sequelize/Node开发——Sequelize-auto 快速生成数据库实体工具.md)
 
+#### [PM2 Node.js服务监控神器](node/pm2/PM2 Node.js服务监控神器.md)
+
 ### js学习
 #### [Object.assign()](expreience/js/Object.assign().md)
 
