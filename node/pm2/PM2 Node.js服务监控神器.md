@@ -73,3 +73,16 @@ $ pm2 deploy <configuration_file> <environment> <command>
     [ref]                deploy to [ref], the "ref" setting, or latest tag
 ```
 
+
+
+后台项目需要操作的命令：
+
+```powershell
+pm2 delete all
+git pull
+pm2 deploy ecosystem.json prod
+pm2 restart all
+pm2 list
+```
+
+
