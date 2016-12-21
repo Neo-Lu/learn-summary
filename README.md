@@ -67,4 +67,8 @@
 
 #### [awesome 学习前端正确姿势](expreience/other/awesome 学习前端正确姿势.md)
 
+### html学习
+
 #### [浏览器内核控制 meta标签](html/浏览器内核控制 meta标签.md)
+
+#### [[转]HTML head 头标签](html/[转]HTML head 头标签.md)
