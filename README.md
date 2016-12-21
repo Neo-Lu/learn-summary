@@ -55,7 +55,7 @@
 #### [vim编辑命令](expreience/mac/vim编辑命令.md)
 #### [mac同一个应用之间切换](expreience/mac/mac同一个应用之间切换.md)
 
-#### [mac 文件/文件夹重命名快捷键](expreience/mac/mac 文件/文件夹重命名快捷键.md)
+#### [mac 文件/文件夹重命名快捷键](expreience/mac/文件文件夹重命名快捷键.md)
 
 #### [mac下免费好用的电脑清理工具——腾讯电脑管家](expreience/mac/mac下免费好用的电脑清理工具——腾讯电脑管家.md)
 
