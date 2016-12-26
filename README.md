@@ -24,7 +24,7 @@
 
 #### [Object.assign()](expreience/js/Object.assign().md)
 
-#### [【转】JavaScript代码优化指南(70%)](js/【转】JavaScript代码优化指南.md)
+#### [【转】JavaScript代码优化指南](js/【转】JavaScript代码优化指南.md)
 
 ### vue学习
 #### [【转】Vue.js——vue-resource全攻略](vue/【转】Vue.js——vue-resource全攻略.md)

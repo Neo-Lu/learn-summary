@@ -618,3 +618,232 @@ variable instanceof Array  --> true
 
 　　　　更具体的关于JavaScript数据类型判断方法，可以参见我的另一篇博客：[[浅玩JavaScript的数据类型判断](http://www.cnblogs.com/HCJJ/p/6032236.html)]
 
+　**13.2 类型判断**
+
+　　　　总是使用 === 精确的比较操作符，避免在判断的过程中，由 JavaScript 的强制类型转换所造成的困扰。
+　　　　如果你使用 === 操作符，那比较的双方必须是同一类型为前提的条件下才会有效。
+　　　　在只使用 == 的情况下，JavaScript 所带来的强制类型转换使得判断结果跟踪变得复杂，下面的例子可以看出这样的结果有多怪了：
+
+```javascript
+(function(){
+  'use strict';
+   
+  console.log('0' == 0); // true
+  console.log('' == false); // true
+  console.log('1' == true); // true
+  console.log(null == undefined); // true
+   
+  var x = {
+    valueOf: function() {
+      return 'X';
+    }
+  };
+   
+  console.log(x == 'X');
+   
+}());
+```
+
+**13.3 类型转换**
+
+　　　　**· 字符转数值**　　　　
+
+　　　　　　PS:这里针对的是字符串类型的数值。
+
+```javascript
+//不推荐：
+     Number(str);
+//推荐：
+    variable*1;
+    varIable-1;
+    +variable;
+//当字符串结尾包含非数字并期望忽略时，使用parseInt
+    parseInt(variable)
+//示例：
+    var width = '200px';
+    parseInt(width, 10);
+```
+
+　　　　**· 小数转整数**
+
+```javascript
+//不推荐：
+      parseInt(variable)
+//推荐：
+      ~~variable
+//备选:
+    Math.ceil();
+    Math.floor();
+```
+
+　　　　**· 转换为布尔型**　　
+
+```javascript
+//不推荐：
+    Boolean(variable);
+//推荐：
+    !variable
+    !!variable
+```
+
+　　　　**· 转换为字符串**
+
+```javascript
+//不推荐：
+    String(variable);
+    variable.toString();
+//推荐：
+    num + '';
+```
+
+### 14. DOM插入的优化
+
++ **不在循环中插入DOM**
+
+　　　　更改页面的DOM结构基本上都会造成浏览器对页面的重新渲染，这所造成的代价是非常庞大的，如果还在循环中去操作DOM，这就更加不能容忍。
+
+```javascript
+//糟糕的：
+ for(var i=0,l=arr.length;i<l;i++){
+     var oDiv = document.createElement('div');
+     document.body.appendChild(oDiv);
+ }
+//建议：
+ var doc = document.createDocumentFragment();
+ for(var i=0,l=arr.length;i<l;i++){
+     var oDiv = document.createElement('div');
+      doc.appendChild(oDiv);
+ }
+ document.appendChild(doc);
+```
+
++ **innerHTML**
+
+　　　　利用文档碎片节点适合更改基本的DOM块，但是对于大范围的DOM更改，使用innerHTML不仅更加简便，而且相比于标准的DOM操作方法，更加的高效。
+
+```javascript
+var htmlStr = '';
+for(var i=0;i<50;i++){
+     htmlStr += '<div>'+i+'</div>';
+}
+document.body.innerHTML = htmlStr;
+```
+
+### 15. 事件代理
+
+　　事件代理是利用了事件的冒泡特性。我们可以为一个统一的父节点绑定事件，然后去进行目标子节点的事件处理。
+　　事件代理可以减少相同事件类型的绑定次数，另外可以解决在JS生成DOM时，必须在生成之后才能绑定事件的问题。最后事件代理还可以解决事件处理程序与所触发事件的DOM对象之间的循环引用问题。
+　　事件代理的实现很简单：　
+
+　　　　HTML 结构：
+
+```html
+<div id="box"><div id="son"></div>
+```
+
+​		JavaScript:
+
+```javascript
+document.getElementById('box').onclick=function(e){
+    var ev = e || window.event,
+        oSrc = ev.target || ev.srcElement;
+ 
+    if(oSrc.id.indexOf('son')){
+        alert('此时进行#son元素的事件处理');
+    }
+ 
+}
+```
+
+### 16. 注意NodeList
+
+　　NodeList 是一组节点列表，它在形态上很接近数组，但并不是数组，通常我们称之为伪数组。
+　　NodeList 的获取主要是通过以下的方法与属性。
+　　　　· document.getElementsByTagName('')
+　　　　· 访问了HTML-DOM的快捷集合属性
+
+　　　　　　· document.images
+　　　　　　· document.forms
+　　　　　　· document.links
+
+　　　　· 获取了DOM的 childNodes 属性
+　　　　· 获取了DOM的 attributes 属性
+　　了解了NodeList,我们还需要知道的是该怎么最小化去访问NodeList次数以便于改进脚本的执行性能：
+　　这里可以参考循环的优化方式，比如循环的终止条件：
+
+````javascript
+for(var i=0,l=document.forms.length;i<l;i++){
+           //....
+ }
+````
+
+### 17. 检查对象是否具有指定的属性与方法
+
+　　当你需要检测一些属性是否存在，避免运行未定义的函数或属性时，这个小技巧就显得很有用。
+　　如果打算定制一些跨兼容的浏览器代码，你也可能会用到这个小技巧。
+　　例如，你想使用document.querySelector() 来选择一个id，并且让它能兼容IE6浏览器，但是在IE6浏览器中这个函数是不存在的，那么使用这个操作符来检测这个函数是否存在就显得非常有用，如下面的示例：
+
+```javascript
+if('querySelector' in document){
+    document.querySelector('#id');
+}else{
+    document.getElementById("id");
+}
+```
+
+### 18. 松散耦合
+
+　　我们强烈推荐前端的三层分离，结构层（HTML）、表现层（CSS）、行为层（JavaScript），但有时在工作中，我们又不能避免在我们的脚本中还附加了一些HTML或CSS代码。既然这个问题目前解决不了，那么我们就要想到以目前的方法，怎么进行最大的优化。
+
++ **HTML && JavaScript**
+
+　　　　当脚本中含有HTML代码时，以下方法可以根据自己的使用场合进行择优选择：　
+
+　　　　  · createElement ： 适合数量最少的DOM创建
+　　　　  · 文档碎片          ： 适合成块的DOM更改。
+　　　　  · innerHTML      ： 适合批量的DOM插入。
+
++ **CSS && JavaScript**
+
+　　　　 当脚本中含有CSS代码时，以下方法可以根据自己的使用场合进行择优选择：  
+
+　　　　　· style : 适合为DOM添加样式不多的情况下。
+　　　　   · cssText ：适合为少量的DOM插入批量的样式。
+　　　　   · className ：通过为DOM添加类名，而类名对应的具体样式内容，则存在一个CSS文件中，这是我更加推荐的。
+　　　　　· <style> ： 如果你需要插入为很多的DOM插入批量的样式内容，那么通过JavaScript 创建一个 <style>标签，也不失是一个解决方案。
+
+ 
+
+### 19. 异常处理
+
+```javascript
+try{
+        // 尝试运行
+ 
+}catch(msg){
+ 
+    throw "Error name:" + msg.name; // throw会在控制台抛出异常信息，注意：throw会阻塞程序执行。建议使用console.log
+    throw "Error message:" + msg.message 
+ 
+    /*  Error.Name 的常见错误信息：
+ 
+        1. EvalError：eval_r()的使用与定义不一致
+        2. RangeError：数值越界
+        3. ReferenceError：非法或不能识别的引用数值
+        4. SyntaxError：发生语法解析错误
+        5. TypeError：操作数类型错误
+        6. URIError：URI处理函数使用不当
+ 
+    */
+ 
+}finally{
+    // finally 最终不论是运行成功还是没有运行成功都会执行。
+}
+```
+
+
+
+
+
+
+
