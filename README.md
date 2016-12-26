@@ -6,7 +6,7 @@
 
 #### [emmet系列（1）基础语法](tools/emmet/emmet系列（1）基础语法.md)
 
-#### [emmet系列（2）HTML](tools/emmet/emmet系列（2）HTML.md)
+#### [emmet系列（2）HTML(50%)](tools/emmet/emmet系列（2）HTML.md)
 
 ### node学习
 
@@ -16,12 +16,15 @@
 
 #### [npm命令学习](node/npm/npm命令学习.md)
 
+#### [Lodash API文档——数组(50%)](node/lodash/Lodash API文档——数组.md)
+
 
 
 ### js学习
+
 #### [Object.assign()](expreience/js/Object.assign().md)
 
-
+#### [【转】JavaScript代码优化指南(70%)](js/【转】JavaScript代码优化指南.md)
 
 ### vue学习
 #### [【转】Vue.js——vue-resource全攻略](vue/【转】Vue.js——vue-resource全攻略.md)
@@ -66,12 +69,8 @@
 ### 前端
 
 #### [awesome 学习前端正确姿势](expreience/other/awesome 学习前端正确姿势.md)
-<<<<<<< HEAD
-=======
-
 ### html学习
 
 #### [浏览器内核控制 meta标签](html/浏览器内核控制 meta标签.md)
 
 #### [[转]HTML head 头标签](html/[转]HTML head 头标签.md)
->>>>>>> origin/master
