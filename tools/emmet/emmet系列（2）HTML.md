@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -317,7 +317,7 @@
     <map name=""></map>
 ```
 
-> area	
+> area
 
 ```html
     <area shape="" coords="" href="" alt="">
@@ -643,7 +643,7 @@
 
 ```html
         <figure>
-            
+
         </figure>
 ```
 
@@ -695,7 +695,7 @@
 
 ```html
         <colgroup>
-            
+
         </colgroup>
 ```
 
@@ -715,7 +715,7 @@
 
 ```html
         <optgroup>
-            
+
         </optgroup>
 ```
 
@@ -735,7 +735,7 @@
 
 ```
         <section>
-            
+
         </section>
 ```
 

@@ -2,7 +2,7 @@
 学习汇总
 只是自己知识沉淀的一个过程。可能会记录各种白痴问题，不过也算是自己成长的一种经历吧。
 
-### emmet系列 
+### emmet系列
 
 #### [emmet系列（1）基础语法](tools/emmet/emmet系列（1）基础语法.md)
 
@@ -66,4 +66,3 @@
 > 前端
 
 #### [awesome 学习前端正确姿势](expreience/other/awesome 学习前端正确姿势.md)
-
