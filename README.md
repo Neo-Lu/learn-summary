@@ -55,7 +55,7 @@
 #### [vim编辑命令](expreience/mac/vim编辑命令.md)
 #### [mac同一个应用之间切换](expreience/mac/mac同一个应用之间切换.md)
 
-#### [mac 文件/文件夹重命名快捷键](expreience/mac/mac 文件/文件夹重命名快捷键.md)
+#### [mac 文件/文件夹重命名快捷键](expreience/mac/文件文件夹重命名快捷键.md)
 
 #### [mac下免费好用的电脑清理工具——腾讯电脑管家](expreience/mac/mac下免费好用的电脑清理工具——腾讯电脑管家.md)
 
@@ -63,6 +63,15 @@
 
 #### [【转】SwaggerUI教程API文档神器 配合Node使用](expreience/mac/【转】SwaggerUI教程API文档神器 搭配Node使用.md)
 
-> 前端
+### 前端
 
 #### [awesome 学习前端正确姿势](expreience/other/awesome 学习前端正确姿势.md)
+<<<<<<< HEAD
+=======
+
+### html学习
+
+#### [浏览器内核控制 meta标签](html/浏览器内核控制 meta标签.md)
+
+#### [[转]HTML head 头标签](html/[转]HTML head 头标签.md)
+>>>>>>> origin/master
