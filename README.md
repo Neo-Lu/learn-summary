@@ -66,6 +66,12 @@
 
 #### [【转】SwaggerUI教程API文档神器 配合Node使用](expreience/mac/【转】SwaggerUI教程API文档神器 搭配Node使用.md)
 
+#### [Webstorm使用babel实现自动编译ES6文件](tools/webstorm/Webstorm使用babel实现自动编译ES6文件.md)
+
+### 工具
+
+#### [Mac环境host修改工具](tools/hosts/Mac环境host修改工具.md)
+
 ### 前端
 
 #### [awesome 学习前端正确姿势](expreience/other/awesome 学习前端正确姿势.md)

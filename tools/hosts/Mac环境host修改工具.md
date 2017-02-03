@@ -1,4 +1,4 @@
-# mac修改工具
+# Mac环境host修改工具
 
 mac hosts修改工具：
 
