@@ -68,6 +68,8 @@
 
 #### [Webstorm使用babel实现自动编译ES6文件](tools/webstorm/Webstorm使用babel实现自动编译ES6文件.md)
 
+#### [【转】webstorm进行javascript的debug](/tools/webstorm/【转】webstorm进行javascript的debug.md)
+
 ### 工具
 
 #### [Mac环境host修改工具](tools/hosts/Mac环境host修改工具.md)
