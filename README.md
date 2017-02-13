@@ -60,6 +60,8 @@
 
 #### [mac 文件/文件夹重命名快捷键](expreience/mac/文件文件夹重命名快捷键.md)
 
+#### [Mac 编写sh脚本](expreience/mac/Mac 编写sh脚本.md)
+
 #### [mac下免费好用的电脑清理工具——腾讯电脑管家](expreience/mac/mac下免费好用的电脑清理工具——腾讯电脑管家.md)
 
 ### [ssh方式登录服务器命令](expreience/mac/production/ssh方式登录服务器命令.md)
@@ -69,6 +71,8 @@
 #### [Webstorm使用babel实现自动编译ES6文件](tools/webstorm/Webstorm使用babel实现自动编译ES6文件.md)
 
 #### [【转】webstorm进行javascript的debug](/tools/webstorm/【转】webstorm进行javascript的debug.md)
+
+
 
 ### 工具
 
